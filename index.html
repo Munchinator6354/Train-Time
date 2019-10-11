@@ -125,10 +125,6 @@
 
 
 
-
-
-
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -138,6 +134,27 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAM4oGeM4lbNjfF6LhlxDPgTbdxUtjsWlk",
+                authDomain: "train-time-b8739.firebaseapp.com",
+                databaseURL: "https://train-time-b8739.firebaseio.com",
+                projectId: "train-time-b8739",
+                storageBucket: "train-time-b8739.appspot.com",
+                messagingSenderId: "836103653900",
+                appId: "1:836103653900:web:11b5cd384e8ab72d9bfc29"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
     </div>
 </body>
 
