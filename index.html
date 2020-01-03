@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+    <!--Bootstrap Reference-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Custom CSS Stylesheet Reference-->
     <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
+
+    <!--jQuery Reference-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Moment Reference to go Here-->
+
+
 </head>
 
 <body>
@@ -94,8 +108,6 @@
             </div>
 
 
-
-
             <div class="card">
                 <div class="card-header">
                     Add Train
@@ -110,52 +122,24 @@
                             <input type="text" id="destination" name="destination"
                                 placeholder="Train Destination Here...">
 
-                            <label for="firstTime">First Train Time (HH:mm - Military Time)</label>
-                            <input type="text" id="firstTime" name="firstTime" placeholder="HH:mm">
+                            <label for="firstTrain">First Train Time (HH:mm - Military Time)</label>
+                            <input type="text" id="firstTrain" name="firstTrain" placeholder="HH:mm">
 
                             <label for="frequency">Frequency (min)</label>
                             <input type="text" id="frequency" name="frequency" placeholder="Frequency (min)">
 
-                            <input type="submit" value="Submit">
+                            <input id="train-add-button" type="submit" value="Submit">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-        <script>
-            // Your web app's Firebase configuration
-            var firebaseConfig = {
-                apiKey: "AIzaSyAM4oGeM4lbNjfF6LhlxDPgTbdxUtjsWlk",
-                authDomain: "train-time-b8739.firebaseapp.com",
-                databaseURL: "https://train-time-b8739.firebaseio.com",
-                projectId: "train-time-b8739",
-                storageBucket: "train-time-b8739.appspot.com",
-                messagingSenderId: "836103653900",
-                appId: "1:836103653900:web:11b5cd384e8ab72d9bfc29"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-        </script>
     </div>
+
+  <!-- Reference to local JS Script -->
+  <script src="app.js"></script>
+
 </body>
 
 </html>
