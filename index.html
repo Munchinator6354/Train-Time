@@ -9,6 +9,7 @@
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
 
     <!--Bootstrap Stylesheet Reference-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,7 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Moment Reference to go Here-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <!-- <script src= "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script> -->
 
 </head>
 
@@ -39,7 +41,7 @@
                 </div>
                 <div class="card-body">
                     <div>
-                        <table class="table">
+                        <table id="trainTable" class="table">
                             <thead class="thead-dark">
 
                                 <tr>
@@ -51,8 +53,8 @@
                                 </tr>
                             </thead>
 
-                            <tbody>
-                                <tr>
+                            <tbody id="trainTableBody">
+                                <!-- <tr>
                                     <th>Trenton Express</th>
                                     <td>Trenton</td>
                                     <td>25</td>
@@ -100,7 +102,7 @@
                                     <td>25</td>
                                     <td>05:28 PM</td>
                                     <td>???</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
